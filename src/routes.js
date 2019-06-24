@@ -4,6 +4,7 @@ import H2Omolecule from "./components/H2Omolecule";
 import HomePage from "./components/HomePage";
 import HydrogenMolecule from "./components/HydrogenMolecule";
 import Oxygen from "./components/Oxygen";
+import Reaction from "./components/Reaction";
 
 const Routes = () => {
   return (
@@ -13,7 +14,8 @@ const Routes = () => {
           <Route exact path="/home" component={HomePage} />
           <Route exact path="/oxygen" component={Oxygen} />
           <Route exact path="/completeReaction" component={H2Omolecule} />
-          <Route exact path="/reaction" component={HydrogenMolecule} />
+          <Route exact path="/mechanism" component={HydrogenMolecule} />
+          <Route exact path="/reaction" component={Reaction} />
         </Switch>
       </div>
     </Route>

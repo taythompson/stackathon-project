@@ -29,7 +29,7 @@ const H2Osketch = p5 => {
   p5.draw = () => {
     // ...
     const baseDiam = 50;
-    p5.background(0);
+    p5.background("white");
     p5.orbitControl(); //gives mouse control
     p5.texture(o); //apply letter texture
     p5.directionalLight(255, 0, 0, 0, 0, -1); //color and direction of light

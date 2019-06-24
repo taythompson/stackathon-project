@@ -2,27 +2,41 @@ import React from "react";
 import { HydrogenSketch } from "./HydrogenSketch";
 import P5Wrapper from "react-p5-wrapper";
 import { Link } from "react-router-dom";
+// import Flip from "react-reveal/Flip";
+import TypeWriter from "react-typewriter";
+import Popover from "react-bootstrap/Popover";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Button from "react-bootstrap/Button";
+import "./Buttons.css";
 
-class HydrogenMolecule extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const popover = (
+  <Popover id="popover-basic" title="Hydrogen is...">
+    the most abundant chemical substance
+  </Popover>
+);
 
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <div>
-            <h1>Hydrogen molecule</h1>
-          </div>
-          <P5Wrapper HydrogenSketch={HydrogenSketch} />
-          <Link to="/oxygen">
-            <button>Next</button>
-          </Link>
-        </header>
-      </div>
-    );
-  }
-}
+const HydrogenMolecule = () => {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <div>
+          <TypeWriter typing={1}>
+            <h2>
+              Hydrogen has one electron orbiting its nucleus. Hydrogen needs one
+              more electron to be stable.
+            </h2>
+          </TypeWriter>
+        </div>
+        <P5Wrapper sketch={HydrogenSketch} />
+        <OverlayTrigger trigger="click" placement="top" overlay={popover}>
+          <Button variant="success">Hydrogen Facts</Button>
+        </OverlayTrigger>
+        <Link to="/oxygen">
+          <Button>Next Step</Button>
+        </Link>
+      </header>
+    </div>
+  );
+};
+
 export default HydrogenMolecule;
