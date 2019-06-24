@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stackathon-project/static/css/main.9ff6a35f.chunk.css",
+    "main.js": "/stackathon-project/static/js/main.811a6adc.chunk.js",
+    "main.js.map": "/stackathon-project/static/js/main.811a6adc.chunk.js.map",
+    "runtime~main.js": "/stackathon-project/static/js/runtime~main.5a49075d.js",
+    "runtime~main.js.map": "/stackathon-project/static/js/runtime~main.5a49075d.js.map",
+    "static/js/2.f920ca29.chunk.js": "/stackathon-project/static/js/2.f920ca29.chunk.js",
+    "static/js/2.f920ca29.chunk.js.map": "/stackathon-project/static/js/2.f920ca29.chunk.js.map",
+    "index.html": "/stackathon-project/index.html",
+    "precache-manifest.f84c254ee5b0591049dac4ceb415ad19.js": "/stackathon-project/precache-manifest.f84c254ee5b0591049dac4ceb415ad19.js",
+    "service-worker.js": "/stackathon-project/service-worker.js",
+    "static/css/main.9ff6a35f.chunk.css.map": "/stackathon-project/static/css/main.9ff6a35f.chunk.css.map"
+  }
+}
