@@ -29,10 +29,14 @@ const HydrogenMolecule = () => {
         </div>
         <P5Wrapper sketch={HydrogenSketch} />
         <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-          <Button variant="success">Hydrogen Facts</Button>
+          <Button className="buttons" variant="success" size="lg">
+            Hydrogen Facts
+          </Button>
         </OverlayTrigger>
         <Link to="/oxygen">
-          <Button>Next Step</Button>
+          <Button className="buttons" size="lg">
+            Next Step
+          </Button>
         </Link>
       </header>
     </div>

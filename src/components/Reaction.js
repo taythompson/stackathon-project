@@ -1,5 +1,5 @@
 import React from "react";
-import "./Reaction.css";
+import "./Reaction.scss";
 
 const Reaction = () => (
   <div id="container">

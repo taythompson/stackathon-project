@@ -27,7 +27,9 @@ const H2Omolecule = () => {
       <div>
         <P5Wrapper sketch={H2Osketch} />
         <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-          <Button variant="success">Bond Type</Button>
+          <Button variant="success" size="lg">
+            Bond Type
+          </Button>
         </OverlayTrigger>
       </div>
     </div>

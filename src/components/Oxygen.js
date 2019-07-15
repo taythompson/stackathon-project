@@ -30,10 +30,14 @@ const Oxygen = () => {
       <P5Wrapper sketch={OxygenSketch} />
       <div className="buttons">
         <OverlayTrigger trigger="click" placement="top" overlay={popover}>
-          <Button variant="success">Oxygen Facts</Button>
+          <Button className="buttons" variant="success" size="lg">
+            Oxygen Facts
+          </Button>
         </OverlayTrigger>
         <Link to="/completeReaction">
-          <Button>Next Step</Button>
+          <Button className="buttons" size="lg">
+            Next Step
+          </Button>
         </Link>
       </div>
     </div>
